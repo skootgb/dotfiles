@@ -6,12 +6,9 @@
       programs.git.enable = true;
       programs.git.settings.user.name = "skootgb";
       programs.git.settings.user.email = "282325556+skootgb@users.noreply.github.com";
+      programs.git.settings.credential."https://github.com".helper = "!gh auth git-credential";
       home.stateVersion = "25.05";
-      programs.bash.profileExtra = ''
-      	if [ -f ~./bashrc ]; then .
-      ~/.bashrc; fi
-      '';
-
+     
       programs.bash = {
 	  enable = true;
 	  shellAliases = {

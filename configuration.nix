@@ -49,6 +49,7 @@
     vim 
     wget
     git
+    gh
     kitty
   ];
 
